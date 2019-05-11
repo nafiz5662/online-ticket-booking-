@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.ChoosingFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="700.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@images/Mount_Everest.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="264.0" layoutY="208.0" prefHeight="178.0" prefWidth="163.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutY="2.0" onAction="#handleBookBusAction" prefHeight="178.0" prefWidth="163.0" stylesheets="@choosingformbutton.css" text="Bus" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="37.0" />
+               </font>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="13.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Bus Booking" textAlignment="CENTER" />
+            <ImageView fitHeight="74.0" fitWidth="83.0" layoutX="40.0" layoutY="14.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@images/bus.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="511.0" layoutY="208.0" prefHeight="178.0" prefWidth="163.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutY="1.0" onAction="#handleBookTrainAction" prefHeight="178.0" prefWidth="163.0" stylesheets="@choosingformbutton.css" text="Train" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="37.0" />
+               </font>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="9.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Train Booking" textAlignment="CENTER" />
+            <ImageView fitHeight="65.0" fitWidth="83.0" layoutX="40.0" layoutY="16.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@images/train.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="29.0" layoutY="208.0" prefHeight="178.0" prefWidth="163.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutY="1.0" onAction="#handleBookPlaneAction" prefHeight="178.0" prefWidth="163.0" stylesheets="@choosingformbutton.css" text="Plane" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="37.0" />
+               </font>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="15.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Air Booking" textAlignment="CENTER" />
+            <ImageView fitHeight="65.0" fitWidth="90.0" layoutX="34.0" layoutY="6.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@images/plane.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="661.0" layoutY="-2.0" onMouseClicked="#handleExit" opacity="0.88" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="367.0" AnchorPane.leftAnchor="661.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="-2.0">
+         <image>
+            <Image url="@images/exit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="142.0" layoutY="81.0" prefHeight="23.0" prefWidth="447.0" text="Select Your Desired Path. Your Stisfation is our Priority." textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

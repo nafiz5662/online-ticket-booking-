@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="callbook" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bus.DetailsFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="700.0" opacity="0.29" pickOnBounds="true">
+         <image>
+            <Image url="@images/bus2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="14.0" prefHeight="31.0" prefWidth="221.0" text="Journey Details" textFill="WHITE" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="14.0" prefHeight="31.0" prefWidth="262.0" text="Information &amp; Payment Details" textFill="WHITE" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="133.0" layoutY="338.0" onAction="#cancelReserve" prefHeight="40.0" prefWidth="161.0" stylesheets="@buttonColor.css" text="Cancel Reservation" textFill="WHITE" />
+      <JFXTextField fx:id="Dfrom" editable="false" focusColor="WHITE" layoutX="117.0" layoutY="67.0" prefHeight="31.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="Dto" editable="false" focusColor="WHITE" layoutX="117.0" layoutY="121.0" prefHeight="29.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="Ddate" editable="false" focusColor="WHITE" layoutX="117.0" layoutY="188.0" prefHeight="29.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <Label layoutX="46.0" layoutY="72.0" prefHeight="31.0" prefWidth="58.0" text="From" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="4.0" layoutY="198.0" prefHeight="31.0" prefWidth="85.0" text="Journey Date" textFill="WHITE" />
+      <Label layoutX="46.0" layoutY="129.0" prefHeight="31.0" prefWidth="25.0" text="To" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="374.0" layoutY="73.0" prefHeight="31.0" prefWidth="58.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="374.0" layoutY="201.0" prefHeight="31.0" prefWidth="58.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="374.0" layoutY="137.0" prefHeight="31.0" prefWidth="58.0" text="Mobile" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <JFXButton fx:id="confirm_button" buttonType="RAISED" layoutX="366.0" layoutY="337.0" onAction="#confirmReserve" prefHeight="40.0" prefWidth="179.0" stylesheets="@buttonColor.css" text="Confirm Reservation" textFill="WHITE" />
+      <JFXTextField fx:id="Dname" editable="false" focusColor="WHITE" layoutX="479.0" layoutY="64.0" prefHeight="29.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="Demail" editable="false" focusColor="WHITE" layoutX="479.0" layoutY="188.0" prefHeight="29.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="Dmobile" editable="false" focusColor="WHITE" layoutX="479.0" layoutY="127.0" prefHeight="29.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="Dpayment" editable="false" focusColor="WHITE" layoutX="479.0" layoutY="257.0" prefHeight="29.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <Label layoutX="366.0" layoutY="265.0" prefHeight="31.0" prefWidth="85.0" text="Bus Id" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <JFXTextField fx:id="pass" editable="false" focusColor="WHITE" layoutX="117.0" layoutY="258.0" prefHeight="29.0" prefWidth="155.0" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="19.0" layoutY="264.0" prefHeight="31.0" prefWidth="85.0" text="Payment" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

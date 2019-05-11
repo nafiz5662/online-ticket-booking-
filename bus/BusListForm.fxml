@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bus.BusListFormController">
+   <children>
+      <TableView fx:id="bustable" layoutX="6.0" layoutY="34.0" prefHeight="280.0" prefWidth="543.0">
+        <columns>
+          <TableColumn fx:id="busid" prefWidth="86.0" text="busid" />
+          <TableColumn fx:id="name" prefWidth="76.0" text="name" />
+            <TableColumn fx:id="from" text="from" />
+            <TableColumn fx:id="to" prefWidth="95.0" text="to" />
+            <TableColumn fx:id="time" prefWidth="102.0" text="time" />
+            <TableColumn fx:id="price" prefWidth="103.0" text="price" />
+        </columns>
+      </TableView>
+      <Label layoutX="212.0" layoutY="2.0" prefHeight="29.0" prefWidth="120.0" text="     Bus List" textFill="#f8f6f6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="246.0" layoutY="314.0" onAction="#handleload" prefHeight="25.0" prefWidth="92.0" text="Load" textFill="#fcfcfc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.RegisterController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="700.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@images/mountain-names.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="77.0" layoutX="6.0" layoutY="8.0" onMouseClicked="#handlereset" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Refresh_32px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="6.0" layoutY="151.0" onMouseClicked="#handlHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Home_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="76.0" layoutX="6.0" layoutY="317.0" onMouseClicked="#handleexit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Exit_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="129.0" layoutY="22.0" prefHeight="34.0" prefWidth="124.0" text="Basic  Info" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="Fn" focusColor="WHITE" labelFloat="true" layoutX="129.0" layoutY="89.0" prefHeight="34.0" prefWidth="220.0" promptText="First name" style="-fx-text-inner-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="Ln" focusColor="WHITE" labelFloat="true" layoutX="426.0" layoutY="89.0" prefHeight="34.0" prefWidth="220.0" promptText="Last name" style="-fx-text-inner-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="Email" focusColor="WHITE" labelFloat="true" layoutX="129.0" layoutY="165.0" prefHeight="34.0" prefWidth="220.0" promptText="Email" style="-fx-text-inner-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="Phn" focusColor="WHITE" labelFloat="true" layoutX="426.0" layoutY="168.0" prefHeight="34.0" prefWidth="220.0" promptText="Mobile" style="-fx-text-inner-color: white;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="User" focusColor="WHITE" labelFloat="true" layoutX="129.0" layoutY="242.0" prefHeight="34.0" prefWidth="220.0" promptText="User Name" style="-fx-text-inner-color: white;" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="Pass" focusColor="WHITE" labelFloat="true" layoutX="423.0" layoutY="242.0" prefHeight="34.0" prefWidth="220.0" promptText="Password" style="-fx-text-inner-color: white;" unFocusColor="WHITE" />
+      <JFXButton fx:id="btn_confirm" buttonType="RAISED" layoutX="313.0" layoutY="334.0" onAction="#handleconfirm" prefHeight="34.0" prefWidth="138.0" stylesheets="@buttonColor.css" text="Confirm" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="train.BookingFormController">
+   <children>
+      <Label layoutX="39.0" layoutY="4.0" prefHeight="16.0" prefWidth="164.0" text="Journey Details" textFill="WHITE" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="148.0" text="Information &amp; Payment" textFill="WHITE" AnchorPane.leftAnchor="39.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="from" focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="47.0" promptText="From" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="39.0" />
+      <JFXTextField fx:id="to" focusColor="WHITE" labelFloat="true" layoutX="367.0" layoutY="47.0" promptText="To" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="367.0" />
+      <JFXDatePicker layoutX="39.0" layoutY="96.0" prefHeight="20.0" prefWidth="155.0" promptText="Pick a Date" style="-fx-text-inner-color: white;" AnchorPane.leftAnchor="39.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="367.0" layoutY="96.0" promptText="Payment" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="367.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="192.0" promptText="Name" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="39.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="241.0" promptText="Mobile" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="39.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="287.0" promptText="Email" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="39.0" />
+      <JFXCheckBox layoutX="358.0" layoutY="196.0" text="Male" textFill="WHITE" />
+      <JFXCheckBox layoutX="358.0" layoutY="231.0" prefHeight="20.0" prefWidth="96.0" text="Female" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="367.0" layoutY="274.0" onAction="#handleReserve" prefHeight="51.0" prefWidth="96.0" stylesheets="@buttonColor.css" text="Reserve" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </JFXButton>
+   </children>
+</AnchorPane>

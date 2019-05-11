@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="bookingformpane" prefHeight="348.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bus.BookingFormController">
+   <children>
+      <Label layoutX="39.0" layoutY="4.0" prefHeight="16.0" prefWidth="164.0" text="Journey Details" textFill="WHITE" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="153.0" text="Information &amp; Payment" textFill="WHITE" AnchorPane.leftAnchor="39.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="Bdate" layoutX="33.0" layoutY="96.0" prefHeight="20.0" prefWidth="155.0" promptText="Pick a Date" style="-fx-text-inner-color: white;" AnchorPane.leftAnchor="33.0" />
+      <JFXTextField fx:id="Bname" focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="204.0" promptText="Name" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="39.0" />
+      <JFXTextField fx:id="Bmobile" focusColor="WHITE" labelFloat="true" layoutX="356.0" layoutY="204.0" promptText="Mobile" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="356.0" />
+      <JFXTextField fx:id="Bemail" focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="268.0" promptText="Email" style="-fx-text-inner-color: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="39.0" />
+      <JFXButton buttonType="RAISED" layoutX="367.0" layoutY="274.0" onAction="#handleReserve" prefHeight="51.0" prefWidth="96.0" stylesheets="@buttonColor.css" text="Reserve" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </JFXButton>
+      <TextField fx:id="Bfrom" layoutX="32.0" layoutY="50.0" promptText="From" />
+      <TextField fx:id="Bto" layoutX="355.0" layoutY="50.0" promptText="To" />
+      <JFXTextField fx:id="busid" focusColor="WHITE" labelFloat="true" layoutX="355.0" layoutY="96.0" prefHeight="25.0" prefWidth="149.0" promptText="Bus Id" style="-fx-text-inner-color: white;" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="train.DetailsFormController">
+   <children>
+      <Label layoutX="19.0" layoutY="14.0" text="Journey Details" textFill="WHITE" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="298.0" layoutY="14.0" text="Information Details" textFill="WHITE" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="197.0" text="Payment Details" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="11.0" layoutY="184.0" prefHeight="0.0" prefWidth="527.0" AnchorPane.leftAnchor="11.0" />
+      <Separator layoutX="270.0" layoutY="40.0" orientation="VERTICAL" prefHeight="144.0" prefWidth="11.0" />
+      <Label layoutX="11.0" layoutY="36.0" prefHeight="125.0" prefWidth="240.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="11.0" />
+      <Label layoutX="298.0" layoutY="36.0" prefHeight="125.0" prefWidth="240.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="11.0" layoutY="228.0" prefHeight="100.0" prefWidth="240.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="11.0" />
+      <JFXButton buttonType="RAISED" layoutX="311.0" layoutY="237.0" prefHeight="76.0" prefWidth="182.0" stylesheets="@buttonColor.css" text="Cancel Reservation" textFill="WHITE" />
+   </children>
+</AnchorPane>

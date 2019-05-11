@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPanel.AdminController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="130.0" style="-fx-background-color: orange;">
+         <children>
+            <JFXButton fx:id="addvehicle" layoutX="5.0" layoutY="207.0" onAction="#vehicleadd" prefHeight="60.0" prefWidth="120.0" text="Add new Vehicle" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="16.0" layoutY="302.0" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="32.0" layoutY="350.0" text="Exit" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="14.0" onAction="#busPassenger" prefHeight="60.0" prefWidth="130.0" text="Bus Passenger " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="74.0" onAction="#trainPassenger" prefHeight="60.0" prefWidth="130.0" text="Train Passenger " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="134.0" onAction="#planePassenger" prefHeight="60.0" prefWidth="130.0" text="Plane Passenger " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="adminsubpane" layoutX="130.0" prefHeight="400.0" prefWidth="670.0" />
+   </children>
+</AnchorPane>
